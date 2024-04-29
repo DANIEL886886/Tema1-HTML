@@ -1,0 +1,8 @@
+body {background-color: rgba(0, 0, 139, 0.671);}
+h {color: rgb(255, 255, 255); font-family: courier; font-size: 35px; text-align: center;}
+p { color: rgb(255, 255, 255); font-family: verdana; font-size: 25px} 
+pre { text-align: center; color: rgba(255, 230, 7, 0.753); font-family: verdana; font-size: 25px;}
+#negru {color: rgb(0, 0, 0);}
+.italic, .ITALIC {font-style: italic;}
+.large{font-size: 290%;}
+body{text-align: center;}

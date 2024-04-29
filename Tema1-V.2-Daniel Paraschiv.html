@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="Română">
+
+  <head>
+
+  <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head> <title> TEMA din REVIZIA 2 - ZIUA 3 curs FRONT END DEVELOPER </title> </head>
+
+  <style>
+    /* ------------------------------------------------------------------------------------*/
+      body {
+        background-color:rgb(165, 123, 72); 
+        display: flex; 
+        justify-content: center; 
+        height: 460vh; 
+        margin: 10px;
+        text-indent: 10px;}
+    /* ------------------------------------------------------------------------------------*/
+    /* CSS for positioning the image */
+      #image-container {position: relative; left:160px; width: 500px; height: 150px;}
+      #image1 { position: absolute; top: -15px; left: 550px; width: 190px; height: 230px;}
+      #image2 {position: absolute; top: -200px; left: 650px; width: 130px; height: 160px;}
+      .container{width: fit-content;}
+    /* ------------------------------------------------------------------------------------*/
+      ho { color: rgb(0, 0, 0); font-family: verdana; font-size: 200%; font-weight: bold;}
+      h { color: rgb(0, 0, 0); font-family: verdana; font-size: 120%; font-weight: bold; border: 1px solid rgb(85, 36, 36);}
+      p { color: rgb(122, 53, 25); font-family: courier; font-size: 100%; font-weight: bold;}
+      ol { color: rgb(114, 73, 56); font-family: courier; font-size: 100%; font-weight: bold;}
+      ul { color: rgb(114, 73, 56); font-family: courier; font-size: 100%; font-weight: bold;}
+      .TITLU{text-align: center;}
+      .CAPITOL {text-align: left}
+      .PARAGRAF{text-align: left;}
+      .container {border-style: dashed; border-color: rgb(214, 168, 68);background-color: rgb(255, 244, 231);}
+      .FORMULAR {text-align: center;}
+      .VIDEO {text-align: center;}
+    /* ------------------------------------------------------------------------------------*/
+  </style>
+
+  <!--Pentru a trimite informatiile din formularul de la final printr-un email-->
+  <script>
+    function sendEmail() {
+        // Email address to send the email to
+        var email = "danielparaschiv886@gmail.com";
+
+        // Subject of the email
+        var subject = "Submission from your website";
+
+        // Get form values
+        var name = document.getElementById("name").value;
+        var emailValue = document.getElementById("email").value;
+        var gender = document.querySelector('input[name="gender"]:checked').value;
+        var country = document.getElementById("country").value;
+        var message = document.getElementById("message").value;
+
+        // Construct the email body
+        var body = "Name: " + name + "\n" +
+                   "Email: " + emailValue + "\n" +
+                   "Gender: " + gender + "\n" +
+                   "Location: " + country + "\n" +
+                   "Message: " + message;
+
+        // Construct the mailto URL
+        var mailtoURL = "mailto:" + encodeURIComponent(email) + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+        // Open the default email client
+        window.location.href = mailtoURL;
+    }
+  </script>
+
+<div class="container">
+  
+  <body>
+    <!-- Tabel cu 2 randuri si 3 coloane -->
+    <table border="1">
+      <tr> <th>Descriere</th> <th>Ora</th> <th>Data</th> </tr>
+      <tr> <td>Ultima actualizare</td> <td>01:49</td> <td>31.03.2024</td> </tr>
+    </table>
+
+    <br><br><br><div class="TITLU"><h> CURRICULUM VITAE </h></div><br><br><br> 
+    
+      <!-- Container for the image --> 
+      <div id="image-container">
+
+        <pre>
+         INFORMATII GENERALE :
+          
+          Nume: Paraschiv Daniel-Nicolae
+
+          Domiciliu: Bucuresti Sector 6
+
+          Telefon: +40748371419
+
+          E-mail: danielparaschiv886@gmail.com 
+                  danielparaschiv886@yahoo.com
+
+          Sex: Masculin | Vârsta: 28 ani
+
+          Naționalitate: Română
+        </pre>
+
+        <!-- Imaginea de profil + gif--> 
+          <img id="image1" src="Poza profil.jpeg" alt="Poza profil"> 
+          <img id="image2" src="982-cv-curriculum-vitae-resume.gif" alt="">
+
+      </div>
+
+     <br><br><br><br><br><br><br> 
+    
+     <div class="CAPITOL"> <h> EXPERIENTA </h></div>
+     <div class="PARAGRAF">  
+     <p>⚫ 05.08.2016 – 18.05.2020 (4 ANI) / 02.04.2021 – Prezent (3 ANI) / Total 7 ani<br> PROJECT MANAGER & LEAD AUDITOR LA BLUE QUARK CORPORATION S.R.L ( <a href="https://bqc.ro/">https://bqc.ro/</a> )
+        <br> ADRESA: Str. Târnave nr.1 Bl.A1 sc.G ap.101 et.3, PLOIEȘTI</p>
+
+        <ol> DESCRIEREA POSTULUI :
+          <li> Auditor de terță parte cu un număr efectuat de :
+
+          <ul><br>
+            <li> 163 de zile de AUDITURI SOCIALE </li><br>
+            <li> 30 de zile de AUDITURI TEHNICE </li><br>
+            <li> 27 de zile de AUDITURI DE MEDIU </li><br>
+            <li> 220 de zile de audit efectuat </li>
+          </ul><br>
+
+          <li> APSCA Nivel 1, Auditor Asociat de Conformitate Socială (ASCA)
+            <br> la Asociația Auditorilor Profesioniști a Conformității Sociale (APSCA) </li><br>
+          <li> Operațiuni de back-office, Inginer Sistem (PC, Software, Cloud & Server, Backup de date)
+            <br> Traducere documente, Proiecte Consultanță </li><br>
+          <li> Bune calități organizatorice și manageriale dezvoltate precum (coordonarea unei echipe, 
+            <br> coordonarea și dezvoltarea proiectelor, comportament social, abilități sociale,
+            <br> diverse metode de creștere a productivității sistemului)
+          </li>
+
+        </ol><br>
+        
+        <div class="VIDEO"> 
+        <!-- Video element --> <iframe width="693" height="415" src="https://www.youtube.com/embed/nJalOuj-r2w" title="What does an auditor do?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      <p>⚫ 18.05.2020-02.04.2021 (11 luni)<br> CONTROLER CALITATE LA S.C MONDELEZ S.A ( <a href="https://www.mondelezinternational.com/">https://www.mondelezinternational.com/</a> )
+        <br> ADRESA: Drum. Mare, 8, Com. Clinceni, Ilfov, Olteni</p>
+
+        <ol> DESCRIEREA POSTULUI :
+          <li> Controlor de calitate pe linia BAKEROLLS și CROISSANT
+            <ul>
+                <li> program de lucru în 3 schimburi </li>
+                <li> Control eficient asupra liniilor BakeRolls și Croissant </li>
+                <li> La fiecare control al celor 2 linii menționate mai sus se 
+                <br> verifica fiecare parametru critic, precum și punctele critice </li> 
+                <li> Controlul detectoarelor de metale </li>
+                <li> Controlul etașeității </li>
+                <li> Controlul ștampilei, datei de fabricație și expirare, integrității ambalajului </li>
+                <li> Controlul etașeității </li>
+                <li> Măsurarea pâinii, feliilor, temperaturii, precum și a altor parametrii critici </li>
+                <li> Test organoleptic al texturii și cantității condimentului </li>
+                <li> Prelevarea de probe după fiecare control </li>
+                <li> Analiza turturor probelor în laborator (grăsimi, umiditate, conținut de sare, analiza IR,
+                  <br> activitatea apei, prepararea soluțiilor, analiza toledo cu titrare automata, 
+                  <br> manuale, analize de volum) </li>
+                <li> Analiza sării din produsul finit și de asemenea din amestecul de condimente </li>
+                <li> Înregistrarea fiecărui control în S.A.P </li>
+                <li> Operațiuni de back-office (controlul înregistrărilor,
+                  <br> tipărirea de noi fișiere pentru ca lucrătorii să înregistreze date) </li>
+                <li> Teste sanitare pentru fiecare proces de curățare a liniilor </li>
+                <li> Teste alergeni dupa producerea croissant-ului cu cremă de alune </li>
+                <li> Evaluarea conformității echipamentelor de lucru și de securitate ale operatorilor </li>
+                <li> Supravegherea celor 2 linii din punct de vedere al procesului de calitate </li>
+                <li> Realizarea blocajelor produsului finit în cazul parametrilor de calitate neconformi </li>
+            </ul><br>
+          </li> 
+            <li> Controlor de calitate pe linia BAKEROLLS și CROISSANT
+          <ul>
+            <li> Analiza granulozității</li>
+            <li> Controlul fiecărui parametru critic pe aceste 3 linii</li>
+            <li> Înregistrarea fiecărui control în S.A.P</li>
+            <li> Cântărirea ingredientelor</li>
+            <li> Controlul detectoarelor de metale</li>
+            <li> Controlul etanșeității</li>
+            <li> Controlul ștampilei, datei de fabricație și expirare, integrității ambalajului</li>
+          </ul>
+        </ol>
+
+        <p>⚫ 12.05.2017–10.09.2017 (4 luni)<br>STAGIU DE PRACTICĂ LA CRAMELE HALEWOOD S.R.L (VINARIA)
+          <br> ADRESA:Strada Găgeni 92, Ploiești 100137, România, PLOIESTI (ROMANIA)</p>
+        
+        <ol> DESCRIEREA POSTULUI :
+          <ul>
+            <li> practică 2 luni / departament calitate (1 luna) / departament îmbuteliere (1 luna) </li>
+            <li> combinarea tuturor informațiilor învățate pentru a crea raportul final de practică </li>
+          </ul>
+        </ol>  
+
+    </div>
+
+      <br><br><br>
+
+      <div class="CAPITOL"><h>EDUCAȚIE ȘI FORMARE:</h></div>
+        <div class="PARAGRAF"> 
+          <p>⚫ 01.10.2018 - 16.06.2020 MASTER (2 ANI)<br> EXPERTIZARE PENTRU ALIMENTE, MATERIALE ȘI PRODUSE la U.P.B (Universitatea Politehnică București)<br> Catedra de Chimie Anorganica, Fizico-Chimie, Electro-Chimie, BUCUREȘTI</p>
+          <p>⚫ 01.10.2014 - 07.07.2018 LICENȚĂ (4 ANI)<br> INGINER ÎN INDUSTRIA ALIMENTARĂ LA U.P.B (Universitatea Politehnică din București)<br>Facultatea de Chimie Aplicată și Știința Materialelor, BUCUREȘTI</p>
+          <p>⚫ PERMIS DE CONDUCERE: B1, B</p>
+        </div>
+
+      <br><br><br> 
+        
+      <div class="CAPITOL"><h>ALTE CALIFICARI:</h></div>
+        <div class="PARAGRAF"> 
+          <ul>
+            <li> 2021.05.05 - ISO-27001-2013 Auditor intern (Bureau Veritas) </li>
+            <li> 2021.01.15 - IFS Managementul Corpului Străin </li>
+            <li> 24.03.2020 - ISO 19011:2018 - BRC Food versiunea 8:2018 (Rina Simtex) </li>
+            <li> 20.12.2019 - ISO 14001:2015 Auditor de terță parte (Llyod`s Register) </li>
+            <li> 30.11.2019 - IFS Reducerea fraudei alimentare (INAQ Consulting) </li>
+            <li> 19.11.2019 - Training IFS Food 6.1 (INAQ Consulting) </li>
+            <li> 22.10.2019 - Auditor intern ISO 22000 (Bureau Veritas) </li>
+            <li> 2019.10.18 - ISO 9001:2015 Auditor de terță parte (Llyod`s Register) </li>
+            <li> 10.03.2019 - Manager de proiect </li>
+            <li> 28.11.2018 - Planificarea producției </li>
+            <li> 23.03.2017 - Autocad 3D </li>
+            <li> 21.12.2016 - Autocad 2D </li>
+            <li> 02.08.2016 - Auditor Calitate </li>
+            <li> 19.07.2013 - CAMBRIDGE-B2 (Nivel avansat Engleza) </li>
+            <li> 05.01.2013 - DELF-B1 (Nivel incepator Franceza ) </li>
+          </ul>
+        </div>
+
+      <br><br><br> 
+
+      <div class="CAPITOL"><h> PASIUNI / DIVERSE </h></div>
+      <div class="PARAGRAF"> 
+        <ul>
+          <li> Programare Excel in VBA (Virtual Basic Language) </li>
+          <li> Cloud, Server, Backup de date pe Synology NAS </li>
+          <li> Instalare software de operare ( windows , mac ,diverse linux-distro ) </li>
+          <li> Remediere erori software PC / Android </li>
+          <li> Automatizari smart devices </li>
+        </ul>
+      </div>
+
+      <br><br><br> 
+    
+    <div class="FORMULAR"> 
+      <p> "Trimite-mi un mesaj :) completand datele de mai jos "</p><br>
+        <form>
+          <!-- Text input field -->
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required><br><br>
+          <!-- Email input field -->
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email" required><br><br>
+          <!-- Radio buttons -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male"> Male </label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female"> Female </label><br><br>
+          <!-- Select dropdown -->
+            <label for="country"> Location :</label>
+            <select id="country" name="country">
+            <option value="usa"> Romania </option>
+            <option value="canada"> Malta </option>
+            <option value="uk"> Europe </option>
+            </select><br><br>
+          <!-- Message -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="15" cols="70"></textarea><br><br>
+          <!-- Submit button -->
+            <input type="button" value="Submit" onclick="sendEmail()">
+        </form>
+    </div>
+
+  </body>
+
+</div>
+
+</html>
